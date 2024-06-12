@@ -14,14 +14,14 @@
 ### *Work distribution:*
 **Mengting Yang:** Experiment design, data collection, Unity development support, documentation.
 
-**Tianzhou Gao:** Unity application development, webpage and code maintainance.
+**Tianzhou Gao:** Unity application development, webpage, and code maintenance.
 
 **Xuzhong Chen:** Machine Learning model training, IoT platform deployment, security analysis.
 
-**Ang Li:** Experiment design, data collection, webpage and IoT deployment support, documentation.
+**Ang Li:** Experiment design, data collection, webpage, IoT deployment support, documentation.
 
 ### GitHub Link:
-https://github.com/gtz123456/EECS221
+[https://github.com/gtz123456/EECS221](https://github.com/gtz123456/EECS221)
 
 
 ## Abstract
@@ -31,14 +31,14 @@ This report presents the development and evaluation of a user identification sys
 The integration of Mixed Reality (MR) technology in various applications has opened up new possibilities for immersive user experiences. However, the increasing complexity of MR systems poses significant challenges in terms of user identification and data privacy. This project focuses on developing a robust MR application that leverages biometric data for seamless user identification while ensuring data privacy and security on Hololens. By offloading complex computations to cloud services, the system aims to provide a scalable and efficient solution that can be deployed across various hardware platforms.
 
 ## 2. Motivation
-The demand for secure and personalized MR experiences is rapidly growing. Users expect a seamless interaction within shared MR environments, which reduces the trouble of explicitly entering ID or password. Existing research has shown that the integration of biometric data such as eye gaze, head position, and hand gestures can serve as powerful indicators of user identities. However, the data containing user identity information is sensitive and thus needs to be protected. Furthermore, leveraging cloud-based infrastructure for processing and storage ensures scalability and reduces the computational burden on local devices.
+The demand for secure and personalized MR experiences is rapidly growing. Users expect seamless interaction within shared MR environments, which reduces the trouble of explicitly entering an ID or password. Existing research has shown that the integration of biometric data such as eye gaze, head position, and hand gestures can serve as powerful indicators of user identities. However, the data containing user identity information is sensitive and thus needs to be protected. Furthermore, leveraging cloud-based infrastructure for processing and storage ensures scalability and reduces the computational burden on local devices.
 
 Based on the above needs, existing work, and infrastructure, our project focuses on developing a comprehensive method that employs certain biometric data of users while preserving user privacy with the help of cloud-based infrastructure.
 
 ## 3. Problem Definition
-Identifying users accurately based on biometric data in MR applications presents several challenges. Specifically, the problem can be broken down into the following sub problems:
+Identifying users accurately based on biometric data in MR applications presents several challenges. Specifically, the problem can be broken down into the following sub-problems:
 
-- **Accurate User Identification:** Differentiating between users based on their biometric data through ML is complex due to the variability in data patterns. Appropriate features need to be selected and the ML model needs to be effective and concise in the meantime to support online application. 
+- **Accurate User Identification:** Differentiating between users based on their biometric data through ML is complex due to the variability in data patterns. Appropriate features need to be selected and the ML model needs to be effective and concise in the meantime to support online applications. 
 
 - **Data Privacy and Security:** Ensuring that user data is securely transmitted and stored is crucial to prevent unauthorized access and breaches. A threat model needs to be developed with all possible ways of malicious data access identified. After that light-weighted encryption algorithms ought to be deployed to protect the malicious access. 
 
@@ -46,11 +46,11 @@ Identifying users accurately based on biometric data in MR applications presents
 
 ## 4. Technical Approach
 ### Unity MR Application Development
-The development of the MR application was conducted using **Unity**, a widely-used game development platform. The **Microsoft Mixed Reality Toolkit (MRTK)** and the **hl2ss** plugin were utilized to facilitate the integration of various sensors with the **Hololens 2** device.
+The development of the MR application was conducted using **Unity**, a widely used game development platform. The **Microsoft Mixed Reality Toolkit (MRTK)** and the **hl2ss** plugin were utilized to facilitate the integration of various sensors with the **Hololens 2** device.
 
 #### Development Environment:
 
-- [Hololens 2:](https://www.microsoft.com/en/hololens) A mixed reality headset that provides an immersive experience through advanced sensors and computational capabilities.
+- [Hololens 2:](https://www.microsoft.com/en/hololens) A mixed-reality headset that provides an immersive experience through advanced sensors and computational capabilities.
 - [Unity:](https://unity.com/) A versatile development platform used for creating interactive applications.
 - [Microsoft Mixed Reality Toolkit (MRTK):](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/?view=mrtkunity-2022-05) A collection of tools that simplifies the development of MR applications.
 - [hl2ss Plugin:](https://github.com/jdibenes/hl2ss) Facilitates the integration of sensors with the Hololens 2.
@@ -89,11 +89,11 @@ Offloading complex computational tasks to the cloud significantly reduced the bu
 
 #### Cross-Platform Compatibility:
 
-Cloud-based inference supports various devices, including smartphones, tablets, and computers. This compatibility enhances the portability of the MR application, enabling access to cloud models via the internet.
+Cloud-based inference supports various devices, including smartphones, tablets, and computers. This compatibility enhances the portability of the MR application, enabling access to cloud models via the Internet.
 
 #### Sufficient Computing Resources:
 
-Cloud platforms provide powerful computing resources capable of handling complex machine learning models. This ensures faster inference results and avoids performance bottlenecks associated with limited local device resources.
+Cloud platforms provide powerful computing resources capable of handling complex machine-learning models. This ensures faster inference results and avoids performance bottlenecks associated with limited local device resources.
 
 #### AWS Services
 Services Used:
@@ -134,11 +134,11 @@ The development and deployment of the MR application presented several challenge
 
 1. **Hololens Hardware Limitations:** The performance of the Hololens hardware limited the sampling methods and rates. Additionally, the device does not support background applications, which constrained certain functionalities.
 2. **Limited Sample Size:** The small sample size used for data collection reduced the overall accuracy of the ML model. A larger dataset is necessary to improve model performance.
-3. **Encryption Deployment:** Implementing encryption algorithms on the Hololens was challenging due to limited hardware resources. Ensuring robust data encryption without compromising performance required careful balancing.
+3. **Encryption Deployment:** Implementing encryption algorithms on the Hololens was challenging due to limited hardware resources. Ensuring robust data encryption without compromising performance requires careful balancing.
 
 ## 7. Future Works
 The project identified several areas for future improvement and development:
 
-1. **Model Refinement:** Further refinement of the ML models is needed to enhance accuracy and robustness. This includes exploring advanced algorithms and techniques to better handle the variability in biometric data.
+1. **Model Refinement:** Further refinement of the ML models is needed to enhance accuracy and robustness. This includes exploring advanced algorithms and techniques to handle the variability in biometric data better.
 2. **Expanded Data Sources:** Incorporating additional biometric data, such as detailed eye tracking and hand gestures, can provide a richer dataset for more accurate user identification.
 3. **Real-world Deployment:** Testing the system in diverse and real-world scenarios is crucial to ensure its reliability and performance. This includes deploying the application in various environments and with a larger user base to gather comprehensive feedback.
